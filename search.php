@@ -23,6 +23,7 @@ $result = $stmt->get_result();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         body {
+            background-image: url('anhcho/hinh-nen-cho-corgi-full-hd-cho-may-tinh_050618592.jpg');
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -38,9 +39,9 @@ $result = $stmt->get_result();
         }
         .search-box input {
             padding: 10px;
-            font-size: 16px;
+            font-size: 20px;
             width: 300px;
-            margin-right: 10px;
+            margin-right: 20px;
         }
         .search-box button {
             padding: 10px 20px;
@@ -51,16 +52,20 @@ $result = $stmt->get_result();
             width: 100%;
             margin-top: 20px;
             border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
         table, th, td {
-            border: 1px solid #ddd;
+            border: 1px solid #bbb;
         }
         th, td {
-            padding: 10px;
+            padding: 12px;
             text-align: left;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #234078;
+            color: white;
+            font-weight: bold;
         }
         .product-image {
             width: 100px;

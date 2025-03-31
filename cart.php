@@ -1,7 +1,6 @@
 <?php
 session_start();
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-    // Nếu chưa đăng nhập, chuyển hướng về trang đăng nhập
     echo "<script>
             alert('Please log in to add to cart!.');
             window.location.href = 'login.php';
@@ -20,23 +19,30 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <link rel="stylesheet" href="css/css_cho_cho.css">
     <style>
         body {
+            background-image: url('anhcho/hinh-nen-cho-corgi-full-hd-cho-may-tinh_050618592.jpg');
+            background-size: auto;
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            color: #fff;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
         }
         #wrapper {
             width: 80%;
-            margin: 0 auto;
+            margin: 20px auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
         }
         h1 {
             text-align: center;
-            color: #234078;
-            margin-top: 30px;
+            color: #FFE4E1;
+            margin-top: 20px;
         }
         .cart-item {
             display: flex;
             justify-content: space-between;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #ccc;
             padding: 10px 0;
         }
         .cart-item img {
@@ -51,10 +57,11 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         }
         .cart-item .info p {
             margin: 0;
+            color: #fff;
         }
         .cart-item .price {
             font-weight: bold;
-            color: #234078;
+            color: #FFE4E1;
         }
         .cart-footer {
             display: flex;
@@ -65,6 +72,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         .cart-footer .total {
             font-size: 18px;
             font-weight: bold;
+            color: #FFE4E1;
         }
         .back-button, .checkout-button {
             padding: 10px 15px;
@@ -73,6 +81,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            text-shadow: none;
         }
         .back-button:hover, .checkout-button:hover {
             background-color: #0056b3;
@@ -103,33 +112,29 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <div class="cart-footer">
         <button class="back-button" onclick="goBack()">Return to previous page</button>
         <div class="total" id="total-price">Total: 0 VND</div>
-        <button class="checkout-button" id="checkout-button">Check Out</button>
+        <button class="checkout-button" id="checkout-button"><a href="checkout.php" style="color: white; text-decoration: none;">Check Out</a></button>
     </div>
 </div>
 
 <script>
-    // Kiểm tra xem người dùng đã đăng nhập chưa
     const isLoggedIn = <?php echo isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true ? 'true' : 'false'; ?>;
     
     if (!isLoggedIn) {
         alert("Please log in to add to cart!");
-        window.location.href = 'login.php'; // Chuyển hướng đến trang đăng nhập nếu người dùng chưa đăng nhập
+        window.location.href = 'login.php';
     }
 
-    // Lấy giỏ hàng từ localStorage
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const cartItemsContainer = document.getElementById('cart-items');
     const totalPriceElement = document.getElementById('total-price');
     const checkoutButton = document.getElementById('checkout-button');
 
-    // Hàm tính tổng giá trị giỏ hàng
     function calculateTotal() {
         const total = cart.reduce((acc, item) => acc + parseInt(item.price.replace(/\D/g, '')), 0);
         totalPriceElement.textContent = `Total: ${total.toLocaleString()} VND`;
         checkoutButton.disabled = cart.length === 0;
     }
 
-    // Hàm hiển thị các sản phẩm trong giỏ hàng
     function displayCartItems() {
         cartItemsContainer.innerHTML = '';
         cart.forEach((item, index) => {
@@ -147,25 +152,21 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         });
     }
 
-    // Hàm xóa sản phẩm khỏi giỏ hàng
     function removeItem(index) {
-        cart.splice(index, 1);  // Xóa sản phẩm khỏi mảng cart
+        cart.splice(index, 1);
         updateCart();
     }
 
-    // Hàm cập nhật giỏ hàng và lưu vào localStorage
     function updateCart() {
         localStorage.setItem('cart', JSON.stringify(cart));
         displayCartItems();
         calculateTotal();
     }
 
-    // Hàm quay lại trang trước
     function goBack() {
         window.history.back();
     }
 
-    // Hiển thị giỏ hàng và tính tổng
     displayCartItems();
     calculateTotal();
 </script>
