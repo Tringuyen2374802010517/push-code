@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các Loại Cún</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/css_cho_cho.css">
+    
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+       }
+       .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .item {
+            text-align: center;
+        }
+        .item img {
+            width: 100%;
+            height: 150px; 
+            border-radius: 8px;
+            object-fit: cover; 
+        }
+        .item figcaption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+        }
+       
+       h1{
+        text-align: center;
+        color: #234078;
+        }
+        .add-to-cart {
+            margin-top: 10px;
+            padding: 10px 15px;
+            font-size: 14px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+    <div id="wrapper">
+        <div id="header">
+            <nav class="container">
+                <a href="" id="logo">
+                    <img src="thisanhthat/logo.jpeg" alt="Pet Shop" >
+                </a>
+                <ul id="main-menu">
+                    <li><a href="mainpage.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                    <li><a href=""><i class="fa fa-server" aria-hidden="true"></i>Dogs and Cats</a>
+                        <ul class="sub-menu">
+                            <li><a href="cun.html">Cute Dogs</a></li>
+                            <li><a href="meo.html">Cute Cats</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="fa fa-clone" aria-hidden="true"></i>Services And Others</a>
+                        <ul class="sub-menu">
+                            <li><a href="dichvu.html">My Services</a></li>
+                            <li><a href="phukien.html">Accessories</a></li>
+                            <li><a href="thucan.html">Pet's Foods</a></li>
+                        </ul>
+                    
+                    </li>
+                    <li><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>Informations And Contact</a></li>
+                    <li><a href="search.php"><i class="fa fa-search" aria-hidden="true"></i>Search</a></li>
+                    <li><a href="cart.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shopping Cart</a></li>
+                    <li><a href="login.php"><b><i class="fa fa-user" aria-hidden="true"></i>Log In</b></a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <h1>TYPES OF DOGS AND PUPPIES IN OUR STORE</h1>
+    <main>
+        <div class="gallery">
+            <figure class="item" data-name="Shiba Inu" data-price="10,000,000 VND" data-image="anhcho/cho1.webp">
+                <img src="anhcho/cho1.webp" alt="Sản Phẩm 1">
+                <figcaption>Shiba Inu</figcaption>
+                <figcaption>Price: 10,000,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Alaska" data-price="7,500,000 VND" data-image="anhcho/cho2.jpeg">
+                <img src="anhcho/cho2.jpeg" alt="Sản Phẩm 2">
+                <figcaption>Alaska</figcaption>
+                <figcaption>Price: 7,500,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Samoyed" data-price="5,300,000 VND" data-image="anhcho/cho3.jpeg">
+                <img src="anhcho/cho3.jpeg" alt="Sản phẩm 3">
+                <figcaption>Samoyed</figcaption>
+                <figcaption>Price: 5,300,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Chiwawa" data-price="1,500,000 VND" data-image="anhcho/cho4.jpeg">
+                <img src="anhcho/cho4.jpeg" alt="Sản phẩm 4">
+                <figcaption>Chiwawa</figcaption>
+                <figcaption>Price: 1,500,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Phốc Sóc" data-price="2,500,000 VND" data-image="anhcho/cho5.jpeg">
+                <img src="anhcho/cho5.jpeg" alt="Sản phẩm 5">
+                <figcaption>Phốc Sốc</figcaption>
+                <figcaption>Price: 2,500,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Pug" data-price="1,300,000 VND" data-image="anhcho/cho6.jpeg">
+                <img src="anhcho/cho6.jpeg" alt="Sản phẩm 6">
+                <figcaption>Pug</figcaption>
+                <figcaption>Price: 1,300,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Chăn cừu Đức" data-price="3,500,000 VND" data-image="anhcho/cho7.jpeg">
+                <img src="anhcho/cho7.jpeg"  alt="Sản Phẩm 7">
+                <figcaption>Chăn cừu Đức</figcaption>
+                <figcaption>Price: 3,500,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Bull Pháp" data-price="3,300,000 VND" data-image="anhcho/cho8.jpeg">
+                <img src="anhcho/cho8.jpeg" alt="Sản phẩm 8">
+                <figcaption>Bull Pháp</figcaption>
+                <figcaption>Price: 3,300,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Poodle" data-price="2,500,000 VND" data-image="anhcho/cho9.webp">
+                <img src="anhcho/cho9.webp" alt="Sản phẩm 9">
+                <figcaption>Poodle</figcaption>
+                <figcaption>Price: 2,500,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Beagle" data-price="2,500,000 VND" data-image="anhcho/cho10.jpeg">
+                <img src="anhcho/cho10.jpeg" alt="Sản phẩm 10">
+                <figcaption>Beagle</figcaption>
+                <figcaption>Price: 2,500,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Lạp Xưởng" data-price="1,900,000 VND" data-image="anhcho/cho11.jpeg">
+                <img src="anhcho/cho11.jpeg" alt="Sản phẩm 11">
+                <figcaption>Lạp Xưởng</figcaption>
+                <figcaption>Price: 1,900,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Bernese Mountain" data-price="2,800,000 VND" data-image="anhcho/cho12.jpeg">
+                <img src="anhcho/cho12.jpeg" alt="Sản phẩm 12">
+                <figcaption>Bernese Mountain</figcaption>
+                <figcaption>Price: 2,800,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Airedale" data-price="4,100,000 VND" data-image="anhcho/cho13.webp">
+                <img src="anhcho/cho13.webp" alt="Sản phẩm 13">
+                <figcaption>Airedale</figcaption>
+                <figcaption>Price: 4,100,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Chăn cừu Úc" data-price="6,800,000 VND" data-image="anhcho/cho14.jpeg">
+                <img src="anhcho/cho14.jpeg" alt="Sản phẩm 14">
+                <figcaption>Chăn cừu Úc</figcaption>
+                <figcaption>Price: 6,800,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            </figure>
+            <figure class="item" data-name="American Staffordshire Terrier" data-price="3,800,000 VND" data-image="anhcho/cho15.jpeg">
+                <img src="anhcho/cho15.jpeg" alt="Sản phẩm 15">
+                <figcaption>American Staffordshire Terrier</figcaption>
+                <figcaption>Price: 3,800,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Border Colie" data-price="8,850,000 VND" data-image="anhcho/cho16.jpeg">
+                <img src="anhcho/cho16.jpeg" alt="Sản phẩm 16">
+                <figcaption>Border Colie</figcaption>
+                <figcaption>Price: 8,850,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Great Dane" data-price="4,190,000 VND" data-image="anhcho/cho17.png">
+                <img src="anhcho/cho17.png" alt="Sản phẩm 17">
+                <figcaption>Great Dane</figcaption>
+                <figcaption>Price: 4,190,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Cocker Spaniel Anh" data-price="5,830,000 VND" data-image="anhcho/cho18.jpeg">
+                <img src="anhcho/cho18.jpeg" alt="Sản phẩm 18">
+                <figcaption>Cocker Spaniel Anh</figcaption>
+                <figcaption>Price: 5,830,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Maltese" data-price="2,222,000 VND" data-image="anhcho/cho19.jpeg">
+                <img src="anhcho/cho19.jpeg" alt="Sản phẩm 19">
+                <figcaption>Maltese</figcaption>
+                <figcaption>Price: 2,222,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            </figure>
+            <figure class="item" data-name="Eskimo Mỹ" data-price="3,877,000 VND" data-image="anhcho/cho20.jpeg">
+                <img src="anhcho/cho20.jpeg" alt="Sản phẩm 20">
+                <figcaption>Eskimo Mỹ</figcaption>
+                <figcaption>Price: 3,877,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Yorkshire" data-price="1,050,000 VND" data-image="anhcho/cho21.webp">
+                <img src="anhcho/cho21.webp" alt="Sản phẩm 21">
+                <figcaption>Yorkshire</figcaption>
+                <figcaption>Price: 1,050,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Chow Chow" data-price="8,155,000 VND" data-image="anhcho/cho22.webp">
+                <img src="anhcho/cho22.webp" alt="Sản phẩm 22">
+                <figcaption>Chow Chow</figcaption>
+                <figcaption>Price: 8,155,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Pembroke Welsh Corgi" data-price="5,090,000 VND" data-image="anhcho/cho23.png">
+                <img src="anhcho/cho23.png" alt="Sản phẩm 23">
+                <figcaption>Pembroke Welsh Corgi</figcaption>
+                <figcaption>Price: 5,090,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Bull Terrier" data-price="1,830,000 VND" data-image="anhcho/cho24.webp">
+                <img src="anhcho/cho24.webp" alt="Sản phẩm 24">
+                <figcaption>Bull Terrier</figcaption>
+                <figcaption>Price: 1,830,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Basenji" data-price="2,222,000 VND" data-image="anhcho/cho25.jpeg">
+                <img src="anhcho/cho25.jpeg" alt="Sản phẩm 25">
+                <figcaption>Basenji</figcaption>
+                <figcaption>Price: 2,222,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            </figure>
+            <figure class="item" data-name="Cairn" data-price="1,890,000 VND" data-image="anhcho/cho26.jpeg">
+                <img src="anhcho/cho26.jpeg" alt="Sản phẩm 26">
+                <figcaption>Cairn</figcaption>
+                <figcaption>Price: 1,890,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Bedlington" data-price="2,050,000 VND" data-image="anhcho/cho27.jpeg">
+                <img src="anhcho/cho27.jpeg" alt="Sản phẩm 27">
+                <figcaption>Bedlington</figcaption>
+                <figcaption>Price: 2,050,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Pit Bull Mỹ" data-price="2,155,000 VND" data-image="anhcho/cho28.png">
+                <img src="anhcho/cho28.png" alt="Sản phẩm 28">
+                <figcaption>Pit Bull Mỹ<figcaption>
+                <figcaption>Price: 2,155,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+            <figure class="item" data-name="Shih Tzu" data-price="2,090,000 VND" data-image="anhcho/cho29.jpeg">
+                <img src="anhcho/cho29.jpeg" alt="Sản phẩm 29">
+                <figcaption>Shih Tzu</figcaption>
+                <figcaption>Price: 2,090,000 VND</figcaption>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </figure>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    ,<script>
+        $(document).ready(function(){
+            $('.sub-menu').parent('li').addClass('has-child');
+        });
+    </script>
+    <script>
+        // Thêm sản phẩm vào giỏ hàng
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const product = {
+                    name: item.dataset.name,
+                    price: item.dataset.price,
+                    image: item.dataset.image
+                };
+
+                cart.push(product);
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert(`${product.name} đã được thêm vào giỏ hàng!`);
+            });
+        });
+    </script>
+
+</body>
+</html>

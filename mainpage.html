@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEB PetCare Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/css1.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .text-container {
+            text-align: center;
+            color: #234078; 
+        }
+
+        .text-container h1 {
+            font-size: 3rem; 
+            font-weight: bold; 
+            margin: 0 0 10px;
+        }
+
+        .text-container p {
+            font-size: 1.25rem; 
+            font-weight: normal; 
+            color: #3467a1; 
+        }
+        .section {
+    height: 100vh; 
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF9999;
+    text-align: center;
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+#section1 {
+    background-image: url(thisanhthat/bg4.jpeg);
+}
+
+#section2 {
+
+    background-image: url(thisanhthat/background.png);
+}
+
+#section3 {
+    background-image: url(thisanhthat/bg1.jpeg); 
+}
+#section4 {
+    background-image: url(thisanhthat/bg3.jpeg) ;
+}
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.content p {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+    </style>
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <nav class="container">
+                <a href="" id="logo">
+                    <img src="thisanhthat/logo.jpeg" alt="Pet Shop" >
+                </a>
+                <ul id="main-menu">
+                    <li><a href="mainpage.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                    <li><a href=""><i class="fa fa-server" aria-hidden="true"></i>Dogs and Cats</a>
+                        <ul class="sub-menu">
+                            <li><a href="cun.html">Cute Dogs</a></li>
+                            <li><a href="meo.html">Cute Cats</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="fa fa-clone" aria-hidden="true"></i>Services And Others</a>
+                        <ul class="sub-menu">
+                            <li><a href="dichvu.html">My Services</a></li>
+                            <li><a href="phukien.html">Accessories</a></li>
+                            <li><a href="thucan.html">Pet's Foods</a></li>
+                        </ul>
+                    
+                    </li>
+                    <li><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>Informations And Contact</a></li>
+                    <li><a href="search.php"><i class="fa fa-search" aria-hidden="true"></i>Search</a></li>
+                    <li><a href="cart.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shopping Cart</a></li>
+                    <li><a href="login.php"><b><i class="fa fa-user" aria-hidden="true"></i>Log In</b></a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <div class="text-container">
+        <h1>The Best Pet Groomers in The Town</h1>
+        <p>For a perfect look and feel</p>
+    </div>
+    <section class="section" id="section1">
+        <div class="content">
+            <h1>Welcome to Our Website</h1>
+            <p>Explore the best features for your pets</p>
+        </div>
+    </section>
+    <section class="section" id="section4">
+        <div class="content">
+            <h1>Buy any Pet You Want</h1>
+            <p>We have lots of pets for you</p>
+        </div>
+    </section>
+    <section class="section" id="section2">
+        <div class="content">
+            <h1>Our Services</h1>
+            <p>Discover grooming, training, and more</p>
+        </div>
+    </section>
+    <section class="section" id="section3">
+        <div class="content">
+            <h1>Contact Us</h1>
+            <p>We’re here to help you and your pets!</p>
+        </div>
+    </section>
+    <script src="javascript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    ,<script>
+        $(document).ready(function(){
+            $('.sub-menu').parent('li').addClass('has-child');
+        });
+    </script>
+</body>
+</html>
