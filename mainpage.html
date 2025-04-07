@@ -115,6 +115,20 @@
     <div class="text-container">
         <h1>The Best Pet Groomers in The Town</h1>
         <p>For a perfect look and feel</p>
+        <h2>Fun Fact</h2>
+  <p id="cat-fact">Loading...</p>
+  <button onclick="getCatFact()">Get a new fact.</button>
+
+  <script>
+    async function getCatFact() {
+      const res = await fetch('https://catfact.ninja/fact');
+      const data = await res.json();
+      document.getElementById('cat-fact').innerText = data.fact;
+    }
+
+    // Tự động tải khi mở trang
+    getCatFact();
+  </script>
     </div>
     <section class="section" id="section1">
         <div class="content">
